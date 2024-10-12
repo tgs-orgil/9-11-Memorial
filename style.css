@@ -3,7 +3,7 @@ body {
   width: 100vw;
   background-color: black;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden; /* Remove horizontal scroll */
   user-select: none;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -56,4 +56,13 @@ body {
 
 .footer p {
   font-weight: bold;
+}
+
+iframe {
+  position: relative; /* Change to relative for scrolling */
+  margin-top: 100vh; /* Moves the video further down the page */
+  width: 80%; /* Make the video smaller */
+  height: 700px; /* Adjust the height of the video */
+  margin-left: 10%; /* Center the video horizontally */
+  border: none;
 }
